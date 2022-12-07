@@ -24,7 +24,7 @@ app.use((err,req,res,next)=>{
     const status=err.status || 500;
     const message=err.message || "something went wrong";
     res.status(status).json({sucess:false,status,message})
-})
+})  
 
 //app.get('/api',(req,res)=>{res.send("welcome")})
    
